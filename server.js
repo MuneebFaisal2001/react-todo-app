@@ -1,0 +1,1 @@
+const { createServer } = require('http'); const serveHandler = require('serve-handler'); const server = createServer((req, res) => serveHandler(req, res, { public: 'build' })); server.listen(3000, () => console.log('Running on http://localhost:3000'));
